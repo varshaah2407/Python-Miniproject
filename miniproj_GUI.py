@@ -117,7 +117,7 @@ def Shampoo():
     
         
     Button(MAIN_WINDOW, text="Submit", width=10, height=1, bg="white",command=Shampoo_pro).place(x=300,y=700)
-    Button(MAIN_WINDOW, text="Buy", width=10, height=1, bg="white").place(x=400,y=700)
+    Button(MAIN_WINDOW, text="Buy", width=10, height=1, bg="white",command=Buy).place(x=400,y=700)
 
 def Shampoo_pro():
     if (a>b and a>c):
@@ -199,7 +199,7 @@ def Facewash():
     
         
     Button(MAIN_WINDOW, text="Submit", width=10, height=1, bg="white",command=Facewash_pro).place(x=300,y=700)
-    Button(MAIN_WINDOW, text="Buy", width=10, height=1, bg="white").place(x=400,y=700)
+    Button(MAIN_WINDOW, text="Buy", width=10, height=1, bg="white",command=Buy).place(x=400,y=700)
 
 def Facewash_pro():
     if (a>b and a>c):
@@ -281,7 +281,7 @@ def Soap():
     
         
     Button(MAIN_WINDOW, text="Submit", width=10, height=1, bg="white",command=Soap_pro).place(x=300,y=700)
-    Button(MAIN_WINDOW, text="Buy", width=10, height=1, bg="white").place(x=400,y=700)
+    Button(MAIN_WINDOW, text="Buy", width=10, height=1, bg="white",command=Buy).place(x=400,y=700)
 
 def Soap_pro():
     if (a>b and a>c):
@@ -363,7 +363,7 @@ def Shirt_men():
     
         
     Button(MAIN_WINDOW, text="Submit", width=10, height=1, bg="white",command=Shirt_Men_pro).place(x=300,y=700)
-    Button(MAIN_WINDOW, text="Buy", width=10, height=1, bg="white").place(x=400,y=700)
+    Button(MAIN_WINDOW, text="Buy", width=10, height=1, bg="white",command=Buy).place(x=400,y=700)
 
 def Shirt_Men_pro():
     if (a>b and a>c):
@@ -445,7 +445,7 @@ def Shirt_women():
     
         
     Button(MAIN_WINDOW, text="Submit", width=10, height=1, bg="white",command=Shirt_Women_pro).place(x=300,y=700)
-    Button(MAIN_WINDOW, text="Buy", width=10, height=1, bg="white").place(x=400,y=700)
+    Button(MAIN_WINDOW, text="Buy", width=10, height=1, bg="white",command=Buy).place(x=400,y=700)
 
 def Shirt_Women_pro():
     if (a>b and a>c):
@@ -527,7 +527,7 @@ def Denims():
     
         
     Button(MAIN_WINDOW, text="Submit", width=10, height=1, bg="white",command=Denims_pro).place(x=300,y=700)
-    Button(MAIN_WINDOW, text="Buy", width=10, height=1, bg="white").place(x=400,y=700)
+    Button(MAIN_WINDOW, text="Buy", width=10, height=1, bg="white",command=Buy).place(x=400,y=700)
 
 def Denims_pro():
     if (a>b and a>c):
@@ -545,6 +545,9 @@ def Denims_pro():
     elif (a==b and b==c):
         messagebox.showinfo("Your ideal Jeans:" ,"H&M distressed Jeans") 
         
+        
+def Buy():
+    print("Visit this link to buy your product: https://www.amazon.in/")
         
         
 #Function for login screen
